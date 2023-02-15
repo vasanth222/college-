@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DR.N.G.P INSTITUTE OF TECHNOLOGY</title>
+    <link rel="icon" href="download (9).png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <style>
+        html{
+            background-color:mistyrose;
+        }
+        .tea ul li{
+            list-style-type : none;
+            float:left;
+            border: 2px inset;
+            border-color: green;
+            font-family: sans-serif;
+            width:93px;
+            margin-left:45px;
+            padding:2px;
+            cursor: pointer;
+            box-shadow: 4px 4px lightcoral;
+            display: flex;
+            justify-content: space-around;
+            margin-top:10px;
+            font-size:14px;
+            
+            
+          
+        }
+        .tea ul li a{
+            text-decoration: none;
+            color: black;
+
+        }
+        .tea ul{
+            padding-left:190px;
+           
+        }
+        
+        h1{
+            text-align: center;
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            padding-top:80px;
+        }
+     
+        .info h3{
+            text-align: center;
+            margin: 0;
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 25px darkred, 0 0 5px #000;
+        }
+        .tea .bun li:hover{
+            background-color:rgba(125,99,225,0.3);
+            color: #000;
+            border-radius: 3px;
+        }
+        img{
+            width: 100%;
+           height: 500px;
+           padding-top: 20px;
+        }
+        address,h4{
+            text-align: center;
+        }
+        h5{
+            text-align: center;
+        }
+        h5 a{
+            cursor: pointer;
+        }
+        
+        .tea ul li{
+            border: 2px solid green;
+            border-radius:1px;
+        }
+        .photo img{
+            padding:0;
+            float: left;
+            opacity: 1;
+
+        }
+        .photo p{
+            font-family:'Times New Roman', Times, serif;
+            font-size:17px;
+            color: darkblue;
+        }
+       
+        .ter{
+            padding-top:0px;
+            font-size: 17px;
+            color: red;
+        }
+        .info{
+            margin-top:-200px;
+        }
+         .bun .active:hover{
+            background-color: aqua;
+            border-radius: 3px;
+        }
+        .sub-menu1{
+            display: none;
+            border: 0px;
+        }
+        .tea ul li.sub-menu1{
+            display: block;
+            position: absolute;
+            margin-top: 15px;
+            margin-left: -15px;
+        }
+        .row{
+            display: flex;
+            height:88%;
+            align-items: center;
+        }
+        .col h1{
+            text-align: left;
+            margin-top:-130px;
+        }
+       
+        .card{
+            
+            width: 200px;
+            height: 230px;
+            display:inline-block;
+            border-radius: 10px;
+            padding-left:35px;
+            box-sizing: border-box;
+            cursor: pointer;
+            margin-right: 14px;
+            margin-left:76px;
+            background: url(download\ \(11\).jpeg);
+            z-index:-1;
+            background-position: center;
+            background-size: cover;
+            border: 2px inset green;
+            border-collapse: separate;  
+            font-weight: bolder;
+            
+        }
+        .col{
+            flex-basis: 50%;
+        }
+        .col h1{
+            text-shadow: 1px 1px 2px magenta, 0 0 25px darkred, 0 0 5px darkred;
+            padding-left:0px;
+            padding-top:150px;
+        }
+        .info h5 a{
+            text-decoration: none;
+            border: 3px solid green;
+            border-radius:8px ;
+            padding-left:20px;
+            text-align: center;
+            padding-right: 13px;
+            color: black;
+        }
+        .info h5 a:hover{
+            background-color:black;
+            color: aliceblue;
+        }
+        .card-1{
+            
+            width: 200px;
+            height: 230px;
+            display:inline-block;
+            border-radius: 10px;
+            padding-left:35px;
+            box-sizing: border-box;
+            cursor: pointer;
+            margin-right: 14px;
+            margin-left:55px;
+            background: url(download\ \(12\).jpeg);
+            
+            z-index:-1;
+            background-position: center;
+            background-size: cover;
+            border: 2px inset green;
+            border-collapse: separate;  
+            margin-bottom: 30px;
+            font-weight: bolder;
+            background-color: white;
+            backdrop-filter:blur(100px);
+            
+            
+        }
+      
+        .card-2{
+            width: 200px;
+            height: 230px;
+            display:inline-block;
+            border-radius: 10px;
+            padding-left:35px;
+            box-sizing: border-box;
+            cursor: pointer;
+            margin-right: 14px;
+            margin-left:76px;
+            background: url(images\ \(2\).jpeg);
+            z-index:-1;
+            background-position: center;
+            background-size: cover;
+            border: 2px inset green;
+            border-collapse: separate; 
+            font-weight: bolder; 
+            
+        }
+        .card-3{
+            width: 200px;
+            height: 230px;
+            display:inline-block;
+            border-radius: 10px;
+            padding-left:35px;
+            
+            box-sizing: border-box;
+            cursor: pointer;
+            margin-right: 14px;
+            margin-left:59px;
+            margin-bottom: 20px;
+            background: url(images\ \(3\).jpeg);
+            background-position: center;
+            background-size: cover;
+            border: 2px inset green;
+            
+          
+        }
+        .card-3:hover{
+            transform: perspective(500px) scaleY(0.9) rotateY(15deg);
+            background:url(download\ \(22\).jpeg);
+            color: #fff;
+        }
+        
+        .tea .bun li{
+            border: 2px solid rgba(190, 1,255,0.5 );
+        }
+        .card-3 .p1{
+            color:black;
+            font-weight: bolder;
+
+        }
+        ::-webkit-scrollbar{
+            width: 15px;
+        }
+        ::-webkit-scrollbar-track{
+            background: #d1e5ff;
+        }
+        ::-webkit-scrollbar-thumb{
+            background: linear-gradient(#642bff,#ff22e6);
+            border-radius: 10px;
+            box-shadow: #ff22e6;
+        }
+        .col h2{
+            color:#4B0082;
+        }
+        .life{
+            margin-top: 20px;
+        }
+        .life h2{
+            margin-top: 30px;
+            text-align: left;
+            font-size: xx-large;
+            text-shadow: 1px 1px 2px #fff, 0 0 25px #642bff, 0 0 5px #ff22e6;
+        }
+        .life ul li{
+            
+            list-style: none;
+            padding-left:550px;
+            width: 650px;
+            height:115px;
+            font-size:large;
+            font-family: fantasy;
+        }
+       
+        .background {
+            display: flex;
+            width: 550px; 
+            height:500px; 
+            background-image: url(download\ \(22\).jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation: change infinite 10s ease-in-out;
+        }
+       
+        
+        
+        @keyframes change{
+            
+
+            0%{
+                background-image: url(download\ \(11\).jpeg);
+               
+                
+                
+                
+                
+
+            }
+            20%{
+                background-image: url(download\ \(21\).jpeg);
+                
+                
+            }
+            40%{
+                background-image: url(download\ \(5\).jpeg);
+
+            }
+            60%{
+                background-image: url(download__1_-removebg-preview.png);
+            }
+            100%{
+                background-image: url(download\ \(6\).jpeg);
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <div class="tea">
+        <ul class="bun">
+            <li><i class="fa fa-home"></i><a href="https://www.drngpit.ac.in/about">Home</a></li>
+            <li><i class="fa fa-address-card"></i>About</li>
+            <li><i class="fa fa-building"></i>Department</li>
+            <div class="sub-menu1">
+                <ul>
+                    <li>CSE</li>
+                    <li>EEE</li>
+                    <li>MECH</li>
+                    <li>CIVIL</li>
+                </ul>
+            </div>
+            <li><i class="fa fa-clone"></i>Application</li>
+            <li><i class="fa fa-phone-square"></i>Contact</li>
+            <li><i class="fa fa-globe"></i>Placement</li>
+            <li><i class="fa fa-credit-card"></i>Fee portal</li>
+        </ul>
+    </div>
+    <img src="download__9_-removebg-preview.png" alt="#" style="width:170px;height:170px;margin-right:1px; margin-top:-63px;" >
+
+    <div class="info">
+    <h1>DR.N.G.P INSTITUTE OF TECHNOLOGY</h1>
+    <h3>(An Autonomous Institution)</h3>
+    <p><h4>Approved by AICTE,New Delhi and Affiliated to Anna university,Chennai</h4></p>
+    <p><h4>Recognized by UGC,Accredited by NAAC with A+ Grade and Accredited by NBA(BME,CSE,ECE,EEE & MECH)</h4></p>
+    <address><h4>Dr.N.G.P:-Kalapatti Road,Coimbatore-641048.Tamil Nadu </h4></address>
+    <h5>Phone:0422-2345678   <a href="http://www.drngpit.ac.in/">E-mail</a>     <a href="https://www.drngpit.ac.in/">Website</a></h5>
+    </div>
+    <div class="cong">
+      
+            <div class="image">
+                <img src="https://www.drngpasc.ac.in/images/page_banner/contact.jpg" alt="#">
+            </div>
+                
+    </div>
+    <div class="photo">
+        <img src="download (10).jpeg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+        <h3>Genesis:-</h3>  
+        <p>Dr. Nalla.G.Palaniswami - A name that is taken with great reverence by the medical fraternity and common public alike, for his pioneering efforts in providing quality healthcare. Since its inception in 1989, the Kovai Medical Center and Hospital or KMCH as we know it, has been redefining the corporate hospital set up, making healthcare accessible to all, catering to patients from all over the globe. Looking beyond its success and recognizing the need for competent technical education, Dr.N.G.P initiated the establishment of Dr.N.G.P. Institute of Technology in 2007, and the N.G.P. Group of educational institutions. The College has been approved by the All India Council for Technical Education (AICTE), New Delhi and affiliated to Anna University, Chennai. It aims to develop and implement a comprehensive Human Resources plan, to include recruitment, professional development, retention and succession plans that attract qualified staff and faculty and ensure that they remain contemporary in their respective roles.</p>
+    </div>
+    <div class="row">
+        
+        <div class="col">
+            <h1>Departments</h1>
+            <h2>CSE:-</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex esse reiciendis dignissimos dolore iure delectus eum! Sequi aliquam facere quaerat quod, nesciunt laborum amet quos. Inventore neque sed molestias placeat.</p>
+            <h2>EEE</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, deleniti quos voluptatum minus dolor totam ex! Suscipit deserunt id hic amet quos, saepe eos voluptate ullam eligendi exercitationem voluptates nobis!</p>
+            <h2>BME</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam neque laboriosam error soluta quod eveniet illo praesentium, non sed corporis ullam, fugiat doloribus consequatur quasi nisi provident modi, repellat culpa?</p>
+            <h2>CIVIL</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, minus?</p>
+        </div>
+        <div class="col">
+            <div class="card">
+                <h4>CSE</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, incidunt?</p>
+            </div>
+            <div class="card-1">
+                <h4>BME</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, incidunt?</p>
+            </div>
+            <div class="card-2">
+                <h4>CIVIL</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, incidunt?</p>
+            </div>
+            <div class="card-3">
+                <h4 id="EEE">EEE</h4>
+                <p class="p1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, incidunt?</p>
+            </div>
+        </div>
+    </div>
+    <div class="life">
+        <h2>College life</h2>
+        <div class="background">
+        <ul >
+
+            <li><i class="fa fa-globe">College life can be an exciting and transformative time in a person's life. It provides opportunities to learn new things, meet new people, and gain independence and responsibility.</i></li>
+            <li><i class="fa fa-globe">Academically, college provides students with the chance to specialize in a subject area of their choosing, take advanced courses, and receive a higher level of education than they would in high school.</i></li>
+            <li><i class="fa fa-globe">Socially, college life offers a chance to meet new people from diverse backgrounds, form new relationships, and participate in a variety of clubs and activities. This can be a great time to explore new interests and hobbies and to become involved in the community.</i></li>
+            <li><i class="fa fa-globe">In terms of practical skills, college provides students with opportunities to develop time-management, organizational, and critical-thinking skills, as well as to gain real-world experience through internships, co-op programs, or volunteer work.</i></li>
+            <li><i class="fa fa-globe">Overall, college life can be challenging, but it is also a time filled with personal and academic growth, and the experiences and relationships formed during this time can last a lifetime.</i></li>
+        </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
